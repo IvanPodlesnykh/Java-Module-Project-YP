@@ -4,10 +4,7 @@ import java.util.Scanner;
 public class Check {
     String checkText = "Добавленные товары:";
     private double totalCost;
-
-
     PriceFormatter priceFormatter = new PriceFormatter();
-
 
     public void addDish(Scanner scanner){
         double currentDishCost;
