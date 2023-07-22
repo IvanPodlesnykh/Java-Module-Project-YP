@@ -32,7 +32,7 @@ public class Check {
                 }
 
             totalCost += currentDishCost;
-            checkText = checkText + String.format(": %.2f", currentDishCost);
+            checkText = checkText + String.format(": %.2f ", currentDishCost) + priceFormatter.format(currentDishCost);
             System.out.println("Товар успешно добавлен!");
             System.out.println("Введите \"Завершить\" чтобы завершить добавление блюд.\nВведите любое другое значение, чтобы продолжить введение блюд.");
             if(scanner.next().equalsIgnoreCase("завершить")){

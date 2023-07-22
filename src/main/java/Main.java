@@ -4,10 +4,9 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
         int numberOfPeople;
         Check check = new Check();
-
-
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
         while (true){
@@ -24,7 +23,6 @@ public class Main {
                 System.out.println("Некорректное число людей, введите ЦЕЛОЕ число больше 1!");
                 scanner.next();
             }
-
         }
         check.addDish(scanner);
         check.printCheck();
