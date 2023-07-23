@@ -9,17 +9,16 @@ public class Main {
         Check check = new Check();
         Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
-        while (true){
+        while (true) {
             System.out.println("Введите количество людей, на которых необходимо разделить счет!");
-            try{
+            try {
                 numberOfPeople = scanner.nextInt();
-                if(numberOfPeople > 1){
+                if (numberOfPeople > 1) {
                     break;
-                }
-                else{
+                } else {
                     System.out.println("Некорректное число людей, введите значение больше 1!");
                 }
-            } catch (InputMismatchException e){
+            } catch (InputMismatchException e) {
                 System.out.println("Некорректное число людей, введите ЦЕЛОЕ число больше 1!");
                 scanner.next();
             }

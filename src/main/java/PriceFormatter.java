@@ -1,11 +1,11 @@
 public class PriceFormatter {
 
-    public String format(double price){
+    public String format(double price) {
         String text = "";
-        if (10 <= (int) price && (int) price <= 19){
+        if (10 <= (int) price && (int) price <= 19) {
             text = "рублей";
-        } else{
-            switch ((int) price%10){
+        } else {
+            switch ((int) price % 10) {
                 case 0:
                 case 5:
                 case 6:
