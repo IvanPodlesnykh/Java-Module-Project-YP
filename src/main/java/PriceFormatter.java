@@ -2,7 +2,7 @@ public class PriceFormatter {
 
     public String format(double price) {
         String text = "";
-        if (10 <= (int) price && (int) price <= 19) {
+        if (10 <= (int) price%100 && (int) price%100 <= 19) {
             text = "рублей";
         } else {
             switch ((int) price % 10) {
